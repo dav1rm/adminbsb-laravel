@@ -43,5 +43,5 @@ Route::get('/chartjs', function () {
 
 // Morris page
 Route::get('/morris', function () {
-    return view('pages.morris');
+    return view('pages.morrisjs');
 });

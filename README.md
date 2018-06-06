@@ -19,6 +19,7 @@ Foi realizado a integração das páginas do template às páginas de autentica�
     * View `jquery-datatable.blade.php` contendo a página de [Tabela de dados jquery](https://gurayyarar.github.io/AdminBSBMaterialDesign/pages/tables/jquery-datatable.html);
     * View `morris.blade.php` contendo a página de [Gráfico Morris.js](https://gurayyarar.github.io/AdminBSBMaterialDesign/pages/charts/morris.html);
     * View `chartjs.blade.php` contendo a página de [Gráfico Chart.js](https://gurayyarar.github.io/AdminBSBMaterialDesign/pages/charts/chartjs.html);
+* Removida a Right Sidebar;
 
 
 ## Instalação

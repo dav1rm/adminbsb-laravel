@@ -1,5 +1,10 @@
 @extends('layouts.base')
 @section('head-extra')
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link id="bs-css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link id="bsdp-css" href="bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <script src="bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.min.js" charset="UTF-8"></script>
     <!-- Colorpicker Css -->
     <link href="{{ asset('plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css') }}" rel="stylesheet" />
 
@@ -50,6 +55,27 @@
                     </ul>
                 </div>
                 <div class="body">
+                    <div class="row clearfix">
+                        <!---- Multi Date Piker -->
+                        <div class="col-md-12">
+                            <b>Multi Date</b>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="material-icons">date_range</i>
+                                </span>
+                                <div class="form-line" id="sandbox-container">
+                                    <input type="text" class="form-control date">
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $('#sandbox-container input').datepicker({
+                                language: 'pt-BR',
+                                multidate: true
+                            });
+                        </script>
+                        <!-- END Multi Date Piker -->
+                    </div>
                     <div class="row clearfix">
                         <div class="col-md-6">
                             <b>HEX CODE</b>
